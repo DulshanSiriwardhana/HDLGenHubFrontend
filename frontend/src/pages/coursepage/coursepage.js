@@ -14,7 +14,7 @@ const CoursePage =()=>{
         setTeacher(loggedTeacher);
         getcourses(loggedTeacher._id);
         console.log("Logged Teacher: ",teacher);
-    },[]);
+    },[ teacher]);
 
     const getcourses =async(id)=>{
         const response = await axios.get(`${SERVER}/Course/courses/${id}`);

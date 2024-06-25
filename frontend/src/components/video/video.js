@@ -27,7 +27,7 @@ const Video =(Id)=>{
                     <div className='videocontainer-vh'>
                         <div className='video'><ReactPlayer url={video.data.url} controls={true} width="100%" height="100%"/></div>
                         <div className='videocontainer-video-description'>
-                            <h1>{video.data.description}</h1>
+                            <p>{video.data.description}</p>
                         </div>
                     </div>
                 </div>

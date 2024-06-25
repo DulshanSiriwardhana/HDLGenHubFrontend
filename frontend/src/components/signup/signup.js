@@ -132,6 +132,7 @@ const Signup =()=>{
                 <div className='signupbutton'>
                     <button onClick={handleSignup}>Sign Up</button>
                 </div>
+                <div className='singinhaveacc'>Already have an account? <a href='/signinpage'>Sign In</a></div>
             </div>
         </div>
     );

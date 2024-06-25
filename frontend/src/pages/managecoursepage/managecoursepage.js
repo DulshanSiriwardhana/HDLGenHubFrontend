@@ -1,4 +1,3 @@
-import { useParams } from "react-router";
 import Coursecard from "../../components/coursecard/coursecard";
 import Coursemanagebar from "../../components/coursemanagebar/coursemanagebar";
 import './managecoursepage.css';
@@ -11,7 +10,7 @@ const Managecoursepage =()=>{
                     <Coursemanagebar/>
                 </div>
                 <div className="managecoursepage-coursecard">
-                    	<Coursecard/>
+                    <Coursecard/>
                 </div>
             </div>
         </div>

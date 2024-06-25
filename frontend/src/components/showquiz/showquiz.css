@@ -7,14 +7,20 @@
     align-items: center;
     justify-content: center;
     min-height: 200px;
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     border: none;
-    box-shadow: 0 0 10px 0 black;
+    box-shadow: 0 0 10px 0 rgb(216, 215, 215);
+    border-radius: 10px;
 }
 .quizcomponent-conatainer button{
-    width: 90%;
+    width: 30%;
     height: 30px;
-    margin-bottom: 20px;
+    margin: 20px;
     background-color: #fa9746;
-    border-style: none;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(216, 215, 215);
+    transition: transform 0.3s ease;
 }

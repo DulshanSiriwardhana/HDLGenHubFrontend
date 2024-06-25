@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SERVER } from "../../env.js";
 import "./profilepage.css";
-import { deleteCache, getCache, setCache } from "../../caching/cache";
+import { getCache, setCache } from "../../caching/cache";
 import axios from "axios";
 import Dp from "../../components/dp/dp";
 
@@ -65,7 +65,7 @@ const ProfilePage = () => {
       setGender(user.data.gender);
       setChatid(user.data.chatid);
     }
-  }, []);
+  }, [ user ]);
 
   const handleSave = async () => {
     console.log(name, email, registrationnumber, age, dp, gender, chatid);
@@ -105,16 +105,18 @@ const ProfilePage = () => {
 
   if (user) {
     return (
-      <div className="main-display flex felx-col">
-        <div class="bg-white w-1/3 flex flex-row justify-center items-center rounded-full">
+      <div className="main-display flex felx-col scroll-smooth">
+        <div class="bg-white lg:w-2/5 w-full md:w-3/5 flex flex-row justify-center items-center md:rounded-e-full md:rounded rounded-b-full">     
           <div className="dpandname">
-            <h1>{user.data.name}</h1>
             <div className="dpcontainer">
               {user.data.dp ? <Dp Image={user.data.dp} /> : null}
             </div>
+            <h1>{user.data.name}</h1>
           </div>
+
         </div>
-        <div className="profilecontainer w-2/3">
+
+        <div className="profilecontainer lg:3/5 md:w-3/5">
           <div className="profileform">
             <div className="email">
               <label>Email</label>
@@ -124,7 +126,7 @@ const ProfilePage = () => {
               />
             </div>
             <div className="registrationnumber">
-              <label>registration Number</label>
+              <label>Registration Number</label>
               <input
                 value={user.data.registrationnumber}
                 onChange={(e) => setRegistrationnumber(e.target.value)}
@@ -138,7 +140,7 @@ const ProfilePage = () => {
               />
             </div>
             <div className="dpurl">
-              <label>DP Url</label>
+              <label>DP URL</label>
               <input
                 placeholder={user.data.dp}
                 onChange={(e) => setDp(e.target.value)}
@@ -152,13 +154,15 @@ const ProfilePage = () => {
               />
             </div>
             <div className="chatid">
-              <label>Chat Id</label>
+              <label>Chat ID</label>
               <input
                 value={user.data.chatid}
                 onChange={(e) => setChatid(e.target.value)}
               />
             </div>
-            <button onClick={handleSave}>Save</button>
+            <div class="flex justify-center">
+            <button class="shadow-lg hover:scale-105" onClick={handleSave}>Save</button>
+            </div>
           </div>
         </div>
       </div>
