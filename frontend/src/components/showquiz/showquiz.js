@@ -26,7 +26,7 @@ const Showquiz=(Id)=>{
             <div className='quizcomponent-conatainer'>
                 <h1>{quiz.data.name}</h1>
                 <p>{quiz.data.description}</p>
-                <button onClick={handleAttempquiz}>Attempt</button>
+                <button class="hover:scale-105" onClick={handleAttempquiz}>Attempt</button>
             </div>
         );
     }

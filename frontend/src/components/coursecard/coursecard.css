@@ -12,38 +12,43 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffffff;
     width: 100%;
 }
-.coursecardpack h1{
+.coursecardpack-top h1{
     text-align: center;
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 20px 0 20px 0;
 }
 .coursecardpack h2{
     text-align: center;
-    font-size: 100%;
+    font-size: 16px;
     color: rgb(0, 0, 0);
+    margin: 0px 40px 20px 40px;
 }
 .coursecardpack-top{
-    background-color: #e1e1e1;
-    border-style: groove;
-    border-width: 0 0 2px 0;
-    border-color: black;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(175, 174, 174);
+    padding: 20px 0 20px 0;
 }
-.coursecardcover{
-    width: 80%;
+.coursecard-coursecomponent{
+    background-color: #ffffff;
 }
 .coursecard-coursecomponent-each{
     height: 100%;
     width: 100%;
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     border-style: groove;
-    border-width: 0 0 2px 0;
-    border-color: black;
+    border-width: 0 0 1px 0;
+    border-color: rgb(189, 189, 189);
     padding: 20px 0 20px 0;
 }
 @media screen and (max-width:300px){
