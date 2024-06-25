@@ -1,3 +1,3 @@
-const SERVER = 'http://localhost:4000';
+const SERVER = 'https://hdl-gen-hub-backend.vercel.app';
 
 export { SERVER };
