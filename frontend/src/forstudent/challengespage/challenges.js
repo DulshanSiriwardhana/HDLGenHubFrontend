@@ -9,7 +9,7 @@ const Challenges=()=>{
     }
 
     return(
-        <div className='challenges-page-container mt-20'>
+        <div className='challenges-page-container mt-40'>
             <div className='challenges-page-playground'>
                 <button onClick={handleOpenplayground}>Go to Play Ground</button>
             </div>
