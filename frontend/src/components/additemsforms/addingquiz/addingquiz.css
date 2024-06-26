@@ -1,26 +1,45 @@
 .addingquizcontainer{
-    margin-top: 10px;
-    width: 90%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #e1e1e1;
-    box-shadow: 0 0 10px 0 black;
+    flex-direction: column;
+    width: 90%;
+    height: 60%;
+    background-color: rgb(233, 232, 232);
+    border: 1px solid rgb(200, 199, 199);
+    border-radius: 10px;
+    gap: 10px;
 }
 .addingquizcontainer label{
     font-size: 12px;
-    margin-top: 10px;
+    font-weight: 600;
+    margin-top: 20px;
 }
 .addingquizcontainer input{
-    height: 24px;
-    width: 78%;
+    height: 30px;
+    width: 79%;
+    border-width: 0;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(130, 127, 127);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .addingquizcontainer button{
-    height: 30px;
-    width: 80%;
-    margin-top: 10px;
-    margin-bottom: 10px;
     background-color: #fa9746;
-    border: none;
+    border-width: 0;
+    margin: 20px 0px 20px 0px;
+    height: 30px;
+    padding: 0px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+}
+.addingquizcontainer button:hover{
+    background-color: rgb(222, 98, 15);
 }

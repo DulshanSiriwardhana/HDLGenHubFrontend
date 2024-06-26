@@ -26,19 +26,19 @@ const Coursemanagebar =()=>{
     return(
         <div className="coursemanagebarconatiner">
             <div className='coursemanagebar-item'>
-                <Popup trigger = {<button>Add New Item</button>} modal nested>
+                <Popup trigger = {<button class='bg-blue-500'>Add New Item</button>} modal nested>
                     {
                         <Addcourseitem/>
                     }
                 </Popup>
                 
-                <Popup trigger = {<button>Remove Item</button>} modal nested>
+                <Popup trigger = {<button class='bg-amber-500'>Remove Item</button>} modal nested>
                     {
                         <Removecourseitem/>
                     }
                 </Popup>
 
-                <Popup trigger = {<button>Delete Course</button>} modal nested>
+                <Popup trigger = {<button class='bg-red-500'>Delete Course</button>} modal nested>
                     {
                         <Deletecourse/>
                     }
@@ -49,7 +49,7 @@ const Coursemanagebar =()=>{
                 <div>
                     <h1>Enrolled Students</h1>
                     <h2>{Enrolls?(Object.keys(Enrolls).length):0}</h2>
-
+                    <hr/>
                     <div className='coursemanagebar-students-each'>
                         {Enrolls?(Enrolls.map((enroll)=>(
                             <div key={enroll.enrolledby} className='coursemanagebar-onestudent'>{<Enrolledstudentshow studentid={enroll.enrolledby}/>}</div>

@@ -22,7 +22,7 @@ const Deletecourse=()=>{
     if(isopen){
         return(
             <div className="deletecoursecontainer">
-                <h1>Delete?</h1>
+                <h1>Do you want to delete this course?</h1>
                 <div className="deletecourse-button">
                     <button onClick={handleDelete} className="deletecourse-button1">Yes</button>
                     <button onClick={closeWindow} className="deletecourse-button2">No</button>

@@ -1,21 +1,40 @@
 .removecourseitemcontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-.removecourseitem-button button{
-    background-color: red;
-    border-width: 0;
-    font-weight: 800;
-}
-.removecourseitem{
-    min-height: 300px;
-    background-color: aquamarine;
+    width: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.removecourseitem-button{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+.removecourseitem-button button{
+    background-color: rgb(200, 199, 199);
+    font-weight: 400;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid rgb(251, 251, 251);
+    border-radius: 50px;
+}
+.removecourseitem-button button:hover{
+    background-color: rgb(216, 17, 17);
+}
+.removecourseitem{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 199, 199);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .removecourseitem-select{
     display: flex;
@@ -29,6 +48,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 600;
 }
 .removecourseitem-select-items{
     border-style: groove;
@@ -38,11 +60,19 @@
     flex-direction: column;
     min-width: 160px;
     width: 90%;
+    margin: 10px;
+    gap: 20px;
 }
 .removecourseitem button{
     border-style: groove;
+    margin-top: 20px;
     min-width: 100px;
     min-height: 30px;
     border-radius: 20px;
     background-color: #fa9746;
+    color: white;
+}
+.removecourseitem button:hover{
+    background-color: #e30a0a;
+    color: #ffffff;
 }

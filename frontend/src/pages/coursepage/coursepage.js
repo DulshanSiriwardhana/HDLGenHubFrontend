@@ -6,34 +6,43 @@ import Smallcoursecard from "../../components/smallcoursecard/smallcoursecard";
 import './coursepage.css';
 import Coursepagecover from "../../components/coursepagecover/coursepagecover";
 
-const CoursePage =()=>{
-    const [courses, setCourse] = useState([]);
+const CoursePage = () => {
+    const [courses, setCourses] = useState([]);
     const [teacher, setTeacher] = useState(null);
-    useEffect(()=>{
+
+    useEffect(() => {
         const loggedTeacher = getCache('HDLGenHub_Teacher');
         setTeacher(loggedTeacher);
-        getcourses(loggedTeacher._id);
-        console.log("Logged Teacher: ",teacher);
-    },[ teacher]);
+        if (loggedTeacher) {
+            getcourses(loggedTeacher._id);
+        }
+    }, []);
 
-    const getcourses =async(id)=>{
-        const response = await axios.get(`${SERVER}/Course/courses/${id}`);
-        setCourse(response);
-        console.log("Courses under the logged user: ",response);
+    const getcourses = async (id) => {
+        try {
+            const response = await axios.get(`${SERVER}/Course/courses/${id}`);
+            setCourses(response.data);
+            console.log("Courses under the logged user: ", response.data);
+        } catch (error) {
+            console.error("Error fetching courses:", error);
+        }
     }
 
-    return(
-        <div className="coursepagecontainer">
-            <div className="coursepageheading">
-                <h1>Explore Your Courses</h1>
-            </div>
+    return (
+        <div className="coursepagecontainer bg-slate-900 bg-opacity-75">
             <div className="coursepagecover">
-                <Coursepagecover/>
+                <Coursepagecover />
             </div>
-            <div className="coursepagecoursecontainer">
-                {courses.data?(courses.data.map((course)=>(
-                    <div className="coursecontainer-each" key={course._id}>{<Smallcoursecard data={course}/>}</div>
-                ))):null}
+            <div className="coursepagecoursecontainer bg-white">
+                {courses.length > 0 ? (
+                    courses.map((course) => (
+                        <div className="coursecontainer-each" key={course._id}>
+                            <Smallcoursecard data={course} />
+                        </div>
+                    ))
+                ) : (
+                    <p>No courses found</p>
+                )}
             </div>
         </div>
     );

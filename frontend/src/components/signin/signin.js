@@ -84,7 +84,7 @@ const Signin =()=>{
                         <a href='#'>Privacy Policy</a></span>.
                     </label>
                 </div>
-                <div className='signinbutton'>
+                <div className='signinbutton hover:scale-105'>
                     <button onClick={handleSignin}>Sign In</button>
                 </div>
                 <div className='singindonthaveacc'>Don't have an account? <a href='/signuppage'>Sign Up</a></div>

@@ -6,12 +6,13 @@ const Managecoursepage =()=>{
     return(
         <div className="managecoursepagecontainer">
             <div className="manageopenedcourse">
-                <div className="managecoursepagebar">
-                    <Coursemanagebar/>
-                </div>
                 <div className="managecoursepage-coursecard">
                     <Coursecard/>
                 </div>
+                <div className="managecoursepagebar">
+                    <Coursemanagebar/>
+                </div>
+                
             </div>
         </div>
     );

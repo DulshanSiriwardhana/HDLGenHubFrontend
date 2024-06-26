@@ -32,7 +32,7 @@ const CreationPage =()=>{
 
     const postCourse=async()=>{
         if(name && coverimage && description){
-            const res = await axios.post(`${SERVER}/Course/`, {
+            const res = await axios.post(${SERVER}/Course/, {
                 name,
                 coverimage,
                 description,
@@ -44,7 +44,6 @@ const CreationPage =()=>{
             setCoverimage('');
             setDescription('');
         }
-        else{alert("error");}
     }
 
     const handleAddquestion=async()=>{
@@ -53,7 +52,7 @@ const CreationPage =()=>{
             const name = quizheading;
             const description = quizdescription;
             try{
-                const resquiz = await axios.post(`${SERVER}/Quiz/`,{
+                const resquiz = await axios.post(${SERVER}/Quiz/,{
                     name,
                     description                    
                 })
@@ -64,7 +63,7 @@ const CreationPage =()=>{
                 const image = questionimage;
                 const answer = correctanswer;
                 try{
-                    const resquestion = await axios.post(`${SERVER}/Question/`,{
+                    const resquestion = await axios.post(${SERVER}/Question/,{
                         quizid,
                         problem,
                         image,
@@ -89,7 +88,7 @@ const CreationPage =()=>{
             const image = questionimage;
             const answer = correctanswer;
             try{
-                const resquestion = await axios.post(`${SERVER}/Question/`,{
+                const resquestion = await axios.post(${SERVER}/Question/,{
                     quizid,
                     problem,
                     image,
@@ -112,7 +111,7 @@ const CreationPage =()=>{
         console.log(newquizid);
         const teacherid = teacher._id;
         try{
-            const resquiz = await axios.put(`${SERVER}/Quiz/${newquizid}`,{
+            const resquiz = await axios.put(${SERVER}/Quiz/${newquizid},{
                 teacherid                   
             })
             console.log(resquiz);
@@ -175,7 +174,7 @@ const CreationPage =()=>{
                 </div>
             </div>
 
-            <div className='challenges-creation-container'>
+            {/*<div className='challenges-creation-container'>
                 <h1>Course Creation</h1>
                 <div className='creationchallengesform'>
                     <label>Challenge Heading</label>
@@ -195,7 +194,7 @@ const CreationPage =()=>{
                     </div>
                     <button onClick={postCourse}>Create Course</button>
                 </div>
-            </div>
+            </div>*/}
         </div>
     )
 }

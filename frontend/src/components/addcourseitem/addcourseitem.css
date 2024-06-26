@@ -1,6 +1,6 @@
 .addcourseitemcontainer{
     width: 400px;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,11 +12,17 @@
     justify-content: end;
 }
 .addcourseitem-button button{
-    background-color: red;
-    font-weight: 900;
+    background-color: rgb(200, 199, 199);
+    font-weight: 400;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid rgb(251, 251, 251);
+    border-radius: 50px;
 }
 .addcourseitem-button button:hover{
-    background-color: brown;
+    background-color: rgb(216, 17, 17);
 }
 .addcourseitem{
     width: 90%;
@@ -25,19 +31,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(127, 161, 255);
-    box-shadow: 0px 0px 20px 0px black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 199, 199);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
 }
 .addcourseitem-select{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.addcourseitem-select h1{
-    font-size: 28px;
+.addcourseitem-select h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
 }
 .addcourseitem-select select{
     text-align: center;
-    height: 20px;
+    height: 30px;
     border-radius: 5px;
+    border: 1px solid rgb(200, 199, 199);
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
 }

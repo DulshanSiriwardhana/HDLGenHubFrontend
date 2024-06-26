@@ -63,11 +63,11 @@ const Navbar = () => {
           </div>
           <div className="navbarrightcontainer">
             <ul>
-            <li className="h-7 w-7 md:h-9 md:w-9 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center">
+            <li className="h-6 w-6 md:h-9 md:w-9 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center">
                 <a href="/profile"><span  class="material-symbols-outlined">person</span></a>
                 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@30,100,1,0" rel="stylesheet" />
               </li>
-              <li className="w-16 h-7 md:w-20 md:h-9 text-white bg-gray-400 hover:bg-amber-600 text-xs md:font-medium rounded-3xl flex items-center justify-center md:text-sm text-center">
+              <li className="w-12 h-6 md:w-20 md:h-9 text-white bg-gray-400 hover:bg-amber-600 text-xs md:font-medium rounded-3xl flex items-center justify-center md:text-sm text-center">
                 <button onClick={handleLogout}>Logout</button>
               </li>
             </ul>
@@ -119,9 +119,6 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="/contact">Contact</a>
-              </li>
-              <li>
                 <a href="/about">About</a>
               </li>
               <li>
@@ -151,9 +148,6 @@ const Navbar = () => {
               <a href="/">
                 <span style={{ color: "#fa9746" }}>HDL</span> Gen Hub
               </a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
             </li>
             <li>
               <a href="/about">About</a>

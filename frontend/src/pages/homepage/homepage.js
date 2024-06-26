@@ -44,20 +44,20 @@ const HomePage =()=>{
       </div>
 
       <div className="md:flex md:justify-around md:flex-row flex flex-col gap-16 text-center items-center md:m-20 md:mt-10 mt-0 mb-10">
-        <div className="transform transition duration-300 ease-in-out w-96 h-48 bg-gray-100 rounded-ss-3xl rounded-ee-3xl hover:scale-110 flex justify-center flex-col shadow-lg">
+        <div className="transform transition duration-300 ease-in-out w-96 h-52 bg-gray-100 rounded-ss-3xl rounded-ee-3xl hover:scale-110 flex justify-center flex-col shadow-lg">
           <p className="text-3xl font-bold text-amber-500 m-5">100+</p>
           <p className="md:text-xl sm:text-base font-extralight m-5 mt-0">
             hours of content to gain knowledge <br />
             (updating regularly)
           </p>
         </div>
-        <div className="transform transition duration-300 ease-in-out w-96 h-48 bg-gray-100 rounded-ss-3xl rounded-ee-3xl hover:scale-110 flex justify-center flex-col shadow-lg">
+        <div className="transform transition duration-300 ease-in-out w-96 h-52 bg-gray-100 rounded-ss-3xl rounded-ee-3xl hover:scale-110 flex justify-center flex-col shadow-lg">
           <p className="text-3xl font-bold text-amber-500 m-9 mb-3">100+</p>
           <p className="md:text-xl sm:text-base font-extralight m-10 mt-0">
             experts from the university with the best guidance
           </p>
         </div>
-        <div className="transform transition duration-300 ease-in-out w-96 h-48 bg-gray-100 rounded-ss-3xl rounded-ee-3xl hover:scale-110 flex justify-center flex-col shadow-lg">
+        <div className="transform transition duration-300 ease-in-out w-96 h-52 bg-gray-100 rounded-ss-3xl rounded-ee-3xl hover:scale-110 flex justify-center flex-col shadow-lg">
           <p className="text-3xl sm:text-2xl sm:mb-0 font-bold text-amber-500 m-5 mb-3">350+</p>
           <p className="md:text-xl sm:text-base font-extralight m-7 mt-0">
             users unleashing their potential through E-Learning excellence
@@ -65,7 +65,7 @@ const HomePage =()=>{
         </div>
       </div>
       <div></div>
-      <div className="bg-black md:h-80 h-96 md:rounded-ss-3xl md:rounded-t-3xl rounded-ss-2xl rounded-t-2xl mt-10 p-5">
+      <div className="bg-black md:h-80 h-auto md:rounded-ss-3xl md:rounded-t-3xl rounded-ss-2xl rounded-t-2xl mt-10 p-5">
         <h1 className="text-white md:m-12 m-10 md:text-2xl text-lg font-bold text-center">
           Job-ready talent, Superior outcomes
         </h1>

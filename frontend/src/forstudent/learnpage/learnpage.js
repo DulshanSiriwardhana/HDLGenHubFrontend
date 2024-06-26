@@ -3,7 +3,7 @@ import Enrolledcourses from "../components/enrolledcourses/enrolledcourses";
 
 const LearnPage = () => {
     return (
-        <div class="m-20 mt-10">
+        <div class="m-20">
         <div>
             <h2 class="text-2xl ml-5">Enrolled Courses</h2>
             <Enrolledcourses />

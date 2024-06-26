@@ -1,19 +1,30 @@
 .coursemanagebarconatiner{
-    width: 160px;
+    width: 250px;
+    margin: 20px;
 }
 .coursemanagebar-item{
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .coursemanagebar-item button{
-    width: 100%;
+    width: 80%;
     height: 60px;
-    background-color: #fa9746;
     border-width: 0;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
 }
 .coursemanagebar-item button:hover{
-    background-color: #000000;
-    color: white;
+    background-color: #908e8e;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
@@ -23,28 +34,45 @@
     transition-duration: 0s;
 }
 .coursemanagebar-students{
-    border-style: groove;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
 }
 .coursemanagebar-students h1{
-    font-size: 16px;
-    border-style: groove;
+    font-size: 20px;
+    font-weight: bold;
 }
 .coursemanagebar-students h2{
     font-size: 16px;
-    border-style: groove;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
 }
 .coursemanagebar-students-each{
-    border-style: groove;
     height: 300px;
     overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
 }
 .coursemanagebar-students-each::-webkit-scrollbar{
     width: 0px;
 }
 .coursemanagebar-onestudent{
-    border-style: groove;
-    background-color: #000000;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
 }
 
 @media screen and (max-width:480px){
@@ -59,25 +87,26 @@
     .coursemanagebar-item button{
         width: 100%;
         height: 40px;
-        background-color: #fa9746;
         border-width: 1px;
         border-style: groove;
     }
 }
-@media screen and (max-width:300px){
+@media screen and (max-width:800px){
     .coursemanagebarconatiner{
         width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     .coursemanagebar-item{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         border-style: groove;
     }
     .coursemanagebar-item button{
-        width: 100%;
-        height: 60px;
-        background-color: #fa9746;
-        border-width: 1px;
-        border-style: groove;
+        width: 100px;
+        height: 40px;
+        font-size: small;
+        font-weight: 400;
     }
 }

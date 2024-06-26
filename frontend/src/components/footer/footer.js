@@ -3,7 +3,7 @@ import "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white">
+    <div className="bg-gray-800 text-white bottom-0 ">
       <div className="flex justify-around lg:gap-5 md:p-10 p-5">
         <div className="md:flex md:w-2/3 w-1/2">
 
@@ -41,10 +41,10 @@ const Footer = () => {
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.medium.com"
                 className="transform hover:scale-110 transition duration-300 ease-in-out"
               >
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-medium"></ion-icon>
               </a>
             </div>
           </div>

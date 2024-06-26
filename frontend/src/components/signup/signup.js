@@ -129,7 +129,7 @@ const Signup =()=>{
                         <a href='#'>Privacy Policy</a></span>.
                     </label>
                 </div>
-                <div className='signupbutton'>
+                <div className='signupbutton hover:scale-105'>
                     <button onClick={handleSignup}>Sign Up</button>
                 </div>
                 <div className='singinhaveacc'>Already have an account? <a href='/signinpage'>Sign In</a></div>

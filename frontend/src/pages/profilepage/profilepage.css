@@ -1,6 +1,6 @@
 .main-display{
     background-color: bisque;
-    margin:1px;
+    margin-top: 60px;
 }
 .profilecontainer{
     display: flex;

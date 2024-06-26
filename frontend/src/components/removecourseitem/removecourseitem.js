@@ -67,7 +67,7 @@ const Removecourseitem =()=>{
                                         {item.name}
                                     </label>
                                 )
-                                })):<h1>Hi</h1>}
+                                })):<h1> Loading...</h1>}
 
 
                         </div>

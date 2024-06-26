@@ -1,39 +1,47 @@
 .deletecoursecontainer{
-    min-width: 150px;
-    max-width: 300px;
-    height: fit-content;
+    width: 400px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: aquamarine;
-    gap: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 199, 199);
+    border-radius: 10px;
+    gap: 20px;
     margin: 0px;
     padding: 0px;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 0px 20px 0px rgb(96, 96, 96);
 }
 .deletecoursecontainer h1{
     font-size: 20px;
-    gap: 0px;
-    margin: 0px;
-    padding: 0px;
+    font-weight: 600;
+    color: rgb(218, 11, 11);
 }
 .deletecourse-button{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     border-width: 0;
+    gap: 40px;
 }
 .deletecourse-button1{
     background-color: red;
-    width: 40px;
-    border-width: 0;
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
     font-size: 10px;
+    color: white;
 }
 .deletecourse-button2{
-    background-color: aliceblue;
-    width: 40px;
-    border-width: 0;
+    background-color: rgb(181, 181, 180);
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
     font-size: 10px;
+    color: white;
+}
+.deletecourse-button :hover{
+    background-color: rgb(55, 54, 54);
 }

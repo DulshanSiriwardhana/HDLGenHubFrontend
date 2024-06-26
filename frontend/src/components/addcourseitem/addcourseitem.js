@@ -25,7 +25,7 @@ const Addcourseitem =()=>{
                 </div>
                 <div className='addcourseitem'>
                     <div className="addcourseitem-select">
-                        <h1>Select item</h1>
+                        <h2>Select Item</h2>
                         <select value={value} onChange={handleSelect}>
                             <option value="video">video</option>
                             <option value="document">document</option>

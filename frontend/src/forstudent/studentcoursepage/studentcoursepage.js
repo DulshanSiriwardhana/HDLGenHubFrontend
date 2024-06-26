@@ -6,7 +6,7 @@ const StudentCoursePage =()=>{
     console.log("This :",id);
 
     return(
-        <div className="student-coursepage-container">
+        <div className="student-coursepage-container mt-20">
             <Coursecard/>
         </div>
     );

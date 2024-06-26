@@ -1,18 +1,18 @@
 .manageopenedcourse{
     display: flex;
+    margin: 20px;
+    margin-top: 60px;
 }
 .managecoursepage-coursecard{
     width: 100%;
 }
 .managecoursepagebar{
-    border-style: groove;
-    border-width: 0 2px 0 0;
-    border-color: black;
     z-index: 2;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:800px){
     .managecoursepagecontainer{
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         border-style: groove;
@@ -26,6 +26,13 @@
     }     
 }
 @media screen and (max-width:300px){
+    .managecoursepagecontainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-style: groove;
+    }
     .managecoursepagebar{
         border-style: groove;
         border-width: 0 2px 0 0;

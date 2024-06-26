@@ -1,13 +1,46 @@
 .document-adding-container{
-    width: 90%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    background-color: #e1e1e1;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px 0 black;
+    width: 90%;
+    height: 60%;
+    background-color: rgb(233, 232, 232);
+    border: 1px solid rgb(200, 199, 199);
+    border-radius: 10px;
+    gap: 10px;
 }
 .document-adding-container button{
-    margin-top: 10px;
     background-color: #fa9746;
+    border-width: 0;
+    margin: 20px 0px 20px 0px;
+    height: 30px;
+    padding: 0px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
 }
+.document-adding-container button:hover{
+    background-color: rgb(222, 98, 15);
+}
+.document-adding-container label{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.document-adding-container input{
+    height: 30px;
+    width: 79%;
+    border-width: 0;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(130, 127, 127);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

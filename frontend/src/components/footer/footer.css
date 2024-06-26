@@ -14,8 +14,8 @@
     fill: rgb(218, 141, 46);
 }
 .contact a ion-icon{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .contact a ion-icon:hover{
     fill: rgb(218, 141, 46);
@@ -38,14 +38,14 @@
         font-size: 8px;
     }
     .social a ion-icon{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
     .social a ion-icon:hover{
         fill: rgb(218, 141, 46);
     }
     .contact a ion-icon{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 }

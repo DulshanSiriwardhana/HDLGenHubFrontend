@@ -4,19 +4,25 @@
     align-items: center;
     justify-content: center;
     gap: 10%;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 .coursecontainer-each{
     width: 400px;
     height: 300px;
     margin-top: 20px;
 }
-.coursepageheading h1{
-    text-align: center;
-    font-size: 20px;
-}
 .coursepagecover{
     width: 100%;
+}
+.coursepageheading h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+
 }
 @media screen and (max-width:300px) {
     .coursepagecoursecontainer{
