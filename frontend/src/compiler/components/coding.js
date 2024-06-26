@@ -79,7 +79,7 @@ const Coding=()=>{
     }
 
     return(
-        <div className='codespace-container'>
+        <div className='codespace-container mt-20'>
             <div className='codespace-files-conatiner'>
                 <div className='codespace-files'>
                     {codefiles?codefiles.data.map((codefile)=>(
