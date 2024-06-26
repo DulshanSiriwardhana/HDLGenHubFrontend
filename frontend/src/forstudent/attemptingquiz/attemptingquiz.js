@@ -30,7 +30,7 @@ const Attemptingquiz =()=>{
     },[]);
 
     return(
-        <div className='attemptingquiz-container'>
+        <div className='attemptingquiz-container mt-20'>
             <div className='attemptingquiz-pack'>
                 {questions?(
                     <div className='attemptingquiz-nav'>

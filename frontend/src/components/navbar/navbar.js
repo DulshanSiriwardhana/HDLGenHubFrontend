@@ -53,9 +53,9 @@ const Navbar = () => {
               <li>
                 <a href="/courses">Courses</a>
               </li>
-              <li>
-                {/*<a href="/competitions">Competitions</a>*/}
-              </li>
+              {/*<li>
+                <a href="/competitions">Competitions</a>
+              </li>*/}
               <li>
                 <a href="/creation">Creation</a>
               </li>
