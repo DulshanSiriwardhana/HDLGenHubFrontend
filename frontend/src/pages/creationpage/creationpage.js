@@ -44,6 +44,7 @@ const CreationPage =()=>{
             setCoverimage('');
             setDescription('');
         }
+        else{alert("error");}
     }
 
     const handleAddquestion=async()=>{
@@ -129,7 +130,7 @@ const CreationPage =()=>{
                 <h1>Course Creation</h1>
                 <div className='creationcourseform'>
                     <label>Course Heading</label>
-                    <input alt='name' value={name} onChange={(e)=>setQuizheading(e.target.value)} type='text'></input>
+                    <input alt='name' value={name} onChange={(e)=>setName(e.target.value)} type='text'></input>
                     <label>Cover Image Url</label>
                     <input alt='coverimage' value={coverimage} onChange={(e)=>setCoverimage(e.target.value)} type='text'></input>
                     <label >Course Description</label>
