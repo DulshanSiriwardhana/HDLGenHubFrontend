@@ -29,7 +29,7 @@ const CoursePage = () => {
     }
 
     return (
-        <div className="coursepagecontainer bg-slate-900 bg-opacity-75">
+        <div className="coursepagecontainer">
             <div className="coursepagecover">
                 <Coursepagecover />
             </div>
